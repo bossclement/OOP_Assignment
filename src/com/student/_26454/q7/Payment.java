@@ -8,11 +8,11 @@ public class Payment extends Agreement {
                    String location, String phoneNumber, String agentName, String email,
                    String licenseNumber, String propertyCode, String propertyType,
                    double price, String sellerName, String contactNumber,
-                   String buyerName, String email, String agreementDate,
+                   String buyerName, String buyerEmail, String agreementDate,
                    String terms, double paymentAmount, String paymentDate) throws RealEstateDataException {
         super(id, createdDate, updatedDate, agencyName, location, phoneNumber, agentName,
               email, licenseNumber, propertyCode, propertyType, price, sellerName,
-              contactNumber, buyerName, email, agreementDate, terms);
+              contactNumber, buyerName, buyerEmail, agreementDate, terms);
         if (paymentAmount <= 0) {
             throw new RealEstateDataException("Payment amount must be greater than 0");
         }

@@ -7,12 +7,12 @@ public class Payment extends Order {
     public Payment(long id, String createdDate, String updatedDate, String storeName,
                    String address, String email, String categoryName, String categoryCode,
                    String productName, String productCode, double price,
-                   String customerName, String contactNumber, String address,
+                   String customerName, String contactNumber, String customerAddress,
                    String orderDate, String orderId, String paymentMethod,
                    String paymentStatus) throws ShoppingDataException {
         super(id, createdDate, updatedDate, storeName, address, email, categoryName,
               categoryCode, productName, productCode, price, customerName, contactNumber,
-              address, orderDate, orderId);
+              customerAddress, orderDate, orderId);
         if (paymentMethod == null || paymentMethod.trim().isEmpty()) {
             throw new ShoppingDataException("Payment method cannot be empty");
         }

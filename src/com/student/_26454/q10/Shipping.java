@@ -7,12 +7,12 @@ public class Shipping extends Payment {
     public Shipping(long id, String createdDate, String updatedDate, String storeName,
                     String address, String email, String categoryName, String categoryCode,
                     String productName, String productCode, double price,
-                    String customerName, String contactNumber, String address,
+                    String customerName, String contactNumber, String customerAddress,
                     String orderDate, String orderId, String paymentMethod,
                     String paymentStatus, String shippingAddress, double shippingCost) throws ShoppingDataException {
         super(id, createdDate, updatedDate, storeName, address, email, categoryName,
               categoryCode, productName, productCode, price, customerName, contactNumber,
-              address, orderDate, orderId, paymentMethod, paymentStatus);
+              customerAddress, orderDate, orderId, paymentMethod, paymentStatus);
         if (shippingCost < 0) {
             throw new ShoppingDataException("Shipping cost must be >= 0");
         }

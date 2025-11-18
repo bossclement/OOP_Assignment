@@ -6,13 +6,13 @@ public final class OrderRecord extends Invoice {
     public OrderRecord(long id, String createdDate, String updatedDate, String storeName,
                       String address, String email, String categoryName, String categoryCode,
                       String productName, String productCode, double price,
-                      String customerName, String contactNumber, String address,
+                      String customerName, String contactNumber, String customerAddress,
                       String orderDate, String orderId, String paymentMethod,
                       String paymentStatus, String shippingAddress, double shippingCost,
                       double totalAmount) throws ShoppingDataException {
         super(id, createdDate, updatedDate, storeName, address, email, categoryName,
               categoryCode, productName, productCode, price, customerName, contactNumber,
-              address, orderDate, orderId, paymentMethod, paymentStatus, shippingAddress,
+              customerAddress, orderDate, orderId, paymentMethod, paymentStatus, shippingAddress,
               shippingCost, totalAmount);
     }
     
@@ -30,7 +30,7 @@ public final class OrderRecord extends Invoice {
         System.out.println(STUDENT_ID + " Price: $" + getPrice());
         System.out.println(STUDENT_ID + " Customer: " + getCustomerName());
         System.out.println(STUDENT_ID + " Contact: " + getContactNumber());
-        System.out.println(STUDENT_ID + " Customer Address: " + getAddress());
+        System.out.println(STUDENT_ID + " Customer Address: " + getCustomerAddress());
         System.out.println(STUDENT_ID + " Order Date: " + getOrderDate());
         System.out.println(STUDENT_ID + " Order ID: " + getOrderId());
         System.out.println(STUDENT_ID + " Payment Method: " + getPaymentMethod());

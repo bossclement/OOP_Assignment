@@ -8,11 +8,11 @@ public class Agreement extends Buyer {
                      String location, String phoneNumber, String agentName, String email,
                      String licenseNumber, String propertyCode, String propertyType,
                      double price, String sellerName, String contactNumber,
-                     String buyerName, String email, String agreementDate,
+                     String buyerName, String buyerEmail, String agreementDate,
                      String terms) throws RealEstateDataException {
         super(id, createdDate, updatedDate, agencyName, location, phoneNumber, agentName,
               email, licenseNumber, propertyCode, propertyType, price, sellerName,
-              contactNumber, buyerName, email);
+              contactNumber, buyerName, buyerEmail);
         if (agreementDate == null || agreementDate.trim().isEmpty()) {
             throw new RealEstateDataException("Agreement date cannot be empty");
         }

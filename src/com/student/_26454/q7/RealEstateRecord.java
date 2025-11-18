@@ -7,12 +7,12 @@ public final class RealEstateRecord extends Commission {
                            String location, String phoneNumber, String agentName, String email,
                            String licenseNumber, String propertyCode, String propertyType,
                            double price, String sellerName, String contactNumber,
-                           String buyerName, String email, String agreementDate,
+                           String buyerName, String buyerEmail, String agreementDate,
                            String terms, double paymentAmount, String paymentDate,
                            double commissionRate, double commissionAmount) throws RealEstateDataException {
         super(id, createdDate, updatedDate, agencyName, location, phoneNumber, agentName,
               email, licenseNumber, propertyCode, propertyType, price, sellerName,
-              contactNumber, buyerName, email, agreementDate, terms, paymentAmount,
+              contactNumber, buyerName, buyerEmail, agreementDate, terms, paymentAmount,
               paymentDate, commissionRate, commissionAmount);
     }
     
@@ -34,7 +34,7 @@ public final class RealEstateRecord extends Commission {
         System.out.println(STUDENT_ID + " Seller: " + getSellerName());
         System.out.println(STUDENT_ID + " Seller Contact: " + getContactNumber());
         System.out.println(STUDENT_ID + " Buyer: " + getBuyerName());
-        System.out.println(STUDENT_ID + " Buyer Email: " + getEmail());
+        System.out.println(STUDENT_ID + " Buyer Email: " + getBuyerEmail());
         System.out.println(STUDENT_ID + " Agreement Date: " + getAgreementDate());
         System.out.println(STUDENT_ID + " Terms: " + getTerms());
         System.out.println(STUDENT_ID + " Payment Amount: $" + getPaymentAmount());

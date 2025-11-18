@@ -7,10 +7,10 @@ public class Order extends Customer {
     public Order(long id, String createdDate, String updatedDate, String storeName,
                  String address, String email, String categoryName, String categoryCode,
                  String productName, String productCode, double price,
-                 String customerName, String contactNumber, String address,
+                 String customerName, String contactNumber, String customerAddress,
                  String orderDate, String orderId) throws ShoppingDataException {
         super(id, createdDate, updatedDate, storeName, address, email, categoryName,
-              categoryCode, productName, productCode, price, customerName, contactNumber, address);
+              categoryCode, productName, productCode, price, customerName, contactNumber, customerAddress);
         if (orderDate == null || orderDate.trim().isEmpty()) {
             throw new ShoppingDataException("Order date cannot be empty");
         }
